@@ -4,8 +4,8 @@
         "name": "jhipster"
     },
     "apps": [{
-        "root": "src/main/webapp/",
-        "outDir": "target/www/app",
+        "root": "src/",
+        "outDir": "dist/app",
         "assets": [
             "content",
             "i18n",

@@ -13,7 +13,7 @@ const ENV = 'development';
 module.exports = webpackMerge(commonConfig({ env: ENV }), {
     devtool: 'eval-source-map',
     devServer: {
-        contentBase: './target/www',
+        contentBase: './dist',
         proxy: [{
             context: [
                 /* jhipster-needle-add-entity-to-webpack - JHipster will add entity api paths here */
@@ -34,12 +34,12 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
         }]
     },
     entry: {
-        polyfills: './src/main/webapp/app/polyfills',
-        global: './src/main/webapp/content/scss/global.scss',
-        main: './src/main/webapp/app/app.main'
+        polyfills: './src/app/polyfills',
+        global: './src/content/scss/global.scss',
+        main: './src/app/app.main'
     },
     output: {
-        path: utils.root('target/www'),
+        path: utils.root('dist'),
         filename: 'app/[name].bundle.js',
         chunkFilename: 'app/[id].chunk.js'
     },

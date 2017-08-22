@@ -15,12 +15,12 @@ const extractCSS = new ExtractTextPlugin(`[name].[hash].css`);
 module.exports = webpackMerge(commonConfig({ env: ENV }), {
     // devtool: 'source-map', // Enable source maps. Please note that this will slow down the build
     entry: {
-        polyfills: './src/main/webapp/app/polyfills',
-        global: './src/main/webapp/content/scss/global.scss',
-        main: './src/main/webapp/app/app.main-aot'
+        polyfills: './src/app/polyfills',
+        global: './src/content/scss/global.scss',
+        main: './src/app/app.main-aot'
     },
     output: {
-        path: utils.root('target/www'),
+        path: utils.root('dist'),
         filename: 'app/[name].[hash].bundle.js',
         chunkFilename: 'app/[id].[hash].chunk.js'
     },

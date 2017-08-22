@@ -46,7 +46,7 @@ Service workers are commented by default, to enable them please uncomment the fo
 ```
 * The copy file option in webpack-common.js
 ```js
-{ from: './src/main/webapp/sw.js', to: 'sw.js' },
+{ from: './src/sw.js', to: 'sw.js' },
 ```
 Note: Add the respective scripts/assets in `sw.js` that is needed to be cached.
 
@@ -62,12 +62,12 @@ To benefit from TypeScript type definitions from [DefinitelyTyped][] repository 
 
 Then you would import the JS and CSS files specified in library's installation instructions so that [Webpack][] knows about them:
 
-Edit [src/main/webapp/app/vendor.ts](src/main/webapp/app/vendor.ts) file:
+Edit [src/app/vendor.ts](src/app/vendor.ts) file:
 ~~~
 import 'leaflet/dist/leaflet.js';
 ~~~
 
-Edit [src/main/webapp/content/css/vendor.css](src/main/webapp/content/css/vendor.css) file:
+Edit [src/content/css/vendor.css](src/content/css/vendor.css) file:
 ~~~
 @import '~leaflet/dist/leaflet.css';
 ~~~
@@ -86,9 +86,9 @@ For example, the following command:
 
 will generate few files:
 
-    create src/main/webapp/app/my-component/my-component.component.html
-    create src/main/webapp/app/my-component/my-component.component.ts
-    update src/main/webapp/app/app.module.ts
+    create src/app/my-component/my-component.component.html
+    create src/app/my-component/my-component.component.ts
+    update src/app/app.module.ts
 
 ## Building for production
 
