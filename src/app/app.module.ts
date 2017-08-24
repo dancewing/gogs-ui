@@ -26,6 +26,8 @@ import {
     ErrorComponent
 } from './layouts';
 
+import { ExploreModule } from './explore/explore.module';
+
 @NgModule({
     imports: [
         BrowserModule,
@@ -36,6 +38,7 @@ import {
         JhipsterAdminModule,
         JhipsterAccountModule,
         JhipsterEntityModule,
+        ExploreModule,
         // jhipster-needle-angular-add-module JHipster will add new module here
     ],
     declarations: [

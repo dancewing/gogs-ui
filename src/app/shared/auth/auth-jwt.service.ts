@@ -22,7 +22,7 @@ export class AuthServerProvider {
             password: credentials.password,
             rememberMe: credentials.rememberMe
         };
-        return this.http.post('api/authenticate', data).map(authenticateSuccess.bind(this));
+        return this.http.post('api/v2/authenticate', data).map(authenticateSuccess.bind(this));
 
         function authenticateSuccess(resp) {
             const bearerToken = resp.headers.get('Authorization');

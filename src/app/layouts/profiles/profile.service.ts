@@ -7,7 +7,7 @@ import { ProfileInfo } from './profile-info.model';
 @Injectable()
 export class ProfileService {
 
-    private profileInfoUrl = 'api/profile-info';
+    private profileInfoUrl = 'api/v2/profile-info';
 
     constructor(private http: Http) { }
 

@@ -1,19 +1,16 @@
 {
-    "home": {
-        "title": "Welcome, Java Hipster!",
-        "subtitle": "This is your homepage",
-        "logged": {
-            "message": "You are logged in as user \"{{username}}\"."
-        },
-        "question": "If you have any question on JHipster:",
-        "link": {
-            "homepage": "JHipster homepage",
-            "stackoverflow": "JHipster on Stack Overflow",
-            "bugtracker": "JHipster bug tracker",
-            "chat": "JHipster public chat room",
-            "follow": "follow @java_hipster on Twitter"
-        },
-        "like": "If you like JHipster, don't forget to give us a star on",
-        "github": "GitHub"
-    }
+	"home": {
+		"collaborative_repos": "Collaborative Repositories",
+		"issues": {
+			"in_your_repos": "In your repositories"
+		},
+		"my_mirrors": "My Mirrors",
+		"my_orgs": "My Organizations",
+		"my_repos": "My Repositories",
+		"password_holder": "Password",
+		"show_more_repos": "Show more repositories...",
+		"switch_dashboard_context": "Switch Dashboard Context",
+		"uname_holder": "Username or email",
+		"view_home": "View %s"
+	}
 }

@@ -1,0 +1,17 @@
+{
+	"user": {
+		"activity": "Public Activity",
+		"change_avatar": "Change your avatar",
+		"follow": "Follow",
+		"followers": "Followers",
+		"following": "Following",
+		"form": {
+			"name_pattern_not_allowed": "Username pattern '%s' is not allowed.",
+			"name_reserved": "Username '%s' is reserved."
+		},
+		"join_on": "Joined on",
+		"repositories": "Repositories",
+		"starred": "Starred repositories",
+		"unfollow": "Unfollow"
+	}
+}

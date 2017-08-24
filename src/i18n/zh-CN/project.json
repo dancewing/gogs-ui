@@ -1,0 +1,17 @@
+{
+	"project": {
+		"create": "创建项目",
+		"description": "项目描述",
+		"name": "项目名称",
+		"owner": "拥有者",
+		"parent": "父项目",
+		"parent_helper": "留空该项目为一级项目",
+		"project_name_helper": "伟大的项目名称一般都较短、令人深刻并且 <strong>独一无二</strong> 的。",
+		"repo": "项目仓库",
+		"repo_helper": "选择项目的仓库",
+		"team": "团队",
+		"team_helper": "选择项目的团队",
+		"visibility": "可见性",
+		"visiblity_helper": "该项目为 <span class=\"ui red text\">私有的</span>"
+	}
+}

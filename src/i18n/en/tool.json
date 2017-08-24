@@ -1,0 +1,23 @@
+{
+	"tool": {
+		"1d": "1 day %s",
+		"1h": "1 hour %s",
+		"1m": "1 minute %s",
+		"1mon": "1 month %s",
+		"1s": "1 second %s",
+		"1w": "1 week %s",
+		"1y": "1 year %s",
+		"ago": "ago",
+		"days": "%d days %s",
+		"from_now": "from now",
+		"hours": "%d hours %s",
+		"minutes": "%d minutes %s",
+		"months": "%d months %s",
+		"now": "now",
+		"raw_minutes": "minutes",
+		"raw_seconds": "seconds",
+		"seconds": "%d seconds %s",
+		"weeks": "%d weeks %s",
+		"years": "%d years %s"
+	}
+}

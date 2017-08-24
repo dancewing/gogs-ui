@@ -1,0 +1,9 @@
+{
+	"mail": {
+		"activate_account": "请激活您的帐户",
+		"activate_email": "请验证您的邮箱地址",
+		"register_notify": "欢迎使用",
+		"register_success": "注册成功，欢迎使用",
+		"reset_password": "重置您的密码"
+	}
+}

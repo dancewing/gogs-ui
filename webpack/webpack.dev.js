@@ -23,13 +23,13 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
                 '/v2/api-docs',
                 '/h2-console'
             ],
-            target: 'http://127.0.0.1:8080',
+            target: 'http://127.0.0.1:3000',
             secure: false
         },{
             context: [
                 '/websocket'
             ],
-            target: 'ws://127.0.0.1:8080',
+            target: 'ws://127.0.0.1:3000',
             ws: true
         }]
     },
@@ -80,7 +80,7 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
     plugins: [
         new BrowserSyncPlugin({
             host: 'localhost',
-            port: 9000,
+            port: 7000,
             proxy: {
                 target: 'http://localhost:9060',
                 ws: true

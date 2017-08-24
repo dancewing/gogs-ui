@@ -1,0 +1,17 @@
+{
+	"project": {
+		"create": "Create Project",
+		"description": "Description",
+		"name": "Name",
+		"owner": "Owner",
+		"parent": "Parent",
+		"parent_helper": "Leave blank, it will be top project",
+		"project_name_helper": "A good project name is usually composed of short, memorable and unique keywords.",
+		"repo": "Repository",
+		"repo_helper": "Choose repository from you created",
+		"team": "Team",
+		"team_helper": "Choose team from you created",
+		"visibility": "Visibility",
+		"visiblity_helper": "This project is <span class=\"ui red text\">Private</span>"
+	}
+}

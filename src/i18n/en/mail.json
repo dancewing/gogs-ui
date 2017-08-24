@@ -1,0 +1,9 @@
+{
+	"mail": {
+		"activate_account": "Please activate your account",
+		"activate_email": "Verify your email address",
+		"register_notify": "Welcome on board",
+		"register_success": "Registration successful, welcome",
+		"reset_password": "Reset your password"
+	}
+}

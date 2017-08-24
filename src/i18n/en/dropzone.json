@@ -1,0 +1,8 @@
+{
+	"dropzone": {
+		"default_message": "Drop files here or click to upload.",
+		"file_too_big": "File size ({{filesize}} MB) exceeds maximum size ({{maxFilesize}} MB).",
+		"invalid_input_type": "You can't upload files of this type.",
+		"remove_file": "Remove file"
+	}
+}

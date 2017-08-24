@@ -1,0 +1,23 @@
+{
+	"tool": {
+		"1d": "1 天%s",
+		"1h": "1 小时%s",
+		"1m": "1 分钟%s",
+		"1mon": "1 月%s",
+		"1s": "1 秒%s",
+		"1w": "1 周%s",
+		"1y": "1 年%s",
+		"ago": "之前",
+		"days": "%d 天%s",
+		"from_now": "之后",
+		"hours": "%d 小时%s",
+		"minutes": "%d 分钟%s",
+		"months": "%d 月%s",
+		"now": "刚刚",
+		"raw_minutes": "分钟",
+		"raw_seconds": "秒",
+		"seconds": "%d 秒%s",
+		"weeks": "%d 周%s",
+		"years": "%d 年%s"
+	}
+}

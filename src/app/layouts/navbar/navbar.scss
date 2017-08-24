@@ -24,8 +24,12 @@ Navbar
     }
     ul.navbar-nav {
         padding: 0.5em;
-        .nav-item {
+        &.ml-auto .nav-item {
             margin-left: 1.5rem;
+        }
+
+        &.mr-auto .nav-item {
+            margin-right: 1.5rem;
         }
     }
     a.nav-link {
@@ -60,10 +64,10 @@ Logo styles
         padding: 5px 15px;
         .logo-img {
             height: 45px;
-            width: 70px;
+            width: 45px;
             display: inline-block;
             vertical-align: middle;
-            background: url("../../../content/images/logo-jhipster.png") no-repeat center center;
+            background: url("../../../content/images/favicon.png") no-repeat center center;
             background-size: contain;
         }
     }

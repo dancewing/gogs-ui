@@ -1,0 +1,17 @@
+{
+	"user": {
+		"activity": "公开活动",
+		"change_avatar": "修改头像",
+		"follow": "关注",
+		"followers": "关注者",
+		"following": "关注中",
+		"form": {
+			"name_pattern_not_allowed": "用户名不允许 '%s' 的格式。",
+			"name_reserved": "用户名 '%s' 是被保留的。"
+		},
+		"join_on": "加入于",
+		"repositories": "仓库列表",
+		"starred": "已点赞",
+		"unfollow": "取消关注"
+	}
+}

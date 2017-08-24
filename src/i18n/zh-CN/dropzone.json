@@ -1,0 +1,8 @@
+{
+	"dropzone": {
+		"default_message": "拖曳文件到此处或单击上传",
+		"file_too_big": "文件体积（{{filesize}} MB）超过了最大允许体积（{{maxFilesize}} MB）",
+		"invalid_input_type": "您不能上传该类型的文件",
+		"remove_file": "移除文件"
+	}
+}
