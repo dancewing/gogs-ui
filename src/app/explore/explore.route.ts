@@ -1,10 +1,18 @@
 import { Routes } from '@angular/router';
-
+import { Route } from '@angular/router';
 import {
     reposRoute,
     orgsRoute,
     usersRoute
 } from './';
+
+const homeRoute: Route = {
+    path: '',
+    redirectTo: 'repos',
+    data: {
+        pageTitle: 'default.explore'
+    }
+};
 
 const EXPLORE_ROUTES = [
     reposRoute,

@@ -11,7 +11,8 @@ const commonConfig = require('./webpack.common.js');
 const ENV = 'development';
 
 module.exports = webpackMerge(commonConfig({ env: ENV }), {
-    devtool: 'eval-source-map',
+    //devtool: 'eval-source-map',
+    devtool: 'source-map',
     devServer: {
         contentBase: './dist',
         proxy: [{
@@ -27,7 +28,7 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
             secure: false
         },{
             context: [
-                '/websocket'
+                '/ws'
             ],
             target: 'ws://127.0.0.1:3000',
             ws: true
@@ -67,10 +68,16 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
             test: /(vendor\.scss|global\.scss)/,
             loaders: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
         },
+        { //this rule will only be used for any vendors
+            test: /\.css$/,
+            loaders: ['style-loader', 'css-loader'],
+            include: [/node_modules/]
+        },
         {
             test: /\.css$/,
             loaders: ['to-string-loader', 'css-loader'],
-            exclude: /(vendor\.css|global\.css)/
+           // loader: 'style-loader!css-loader',
+            exclude: /(vendor\.css|global\.css|node_modules)/
         },
         {
             test: /(vendor\.css|global\.css)/,

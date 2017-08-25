@@ -27,6 +27,7 @@ import {
 } from './layouts';
 
 import { ExploreModule } from './explore/explore.module';
+import { GogsUserModule } from './user/user.module';
 
 @NgModule({
     imports: [
@@ -39,6 +40,7 @@ import { ExploreModule } from './explore/explore.module';
         JhipsterAccountModule,
         JhipsterEntityModule,
         ExploreModule,
+        GogsUserModule,
         // jhipster-needle-angular-add-module JHipster will add new module here
     ],
     declarations: [
@@ -47,7 +49,7 @@ import { ExploreModule } from './explore/explore.module';
         ErrorComponent,
         PageRibbonComponent,
         ActiveMenuDirective,
-        FooterComponent
+        FooterComponent,
     ],
     providers: [
         ProfileService,

@@ -53,6 +53,7 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
         {
             test: /\.css$/,
             loaders: ['to-string-loader', 'css-loader'],
+           // loader: 'style-loader!css-loader',
             exclude: /(vendor\.css|global\.css)/
         },
         {
