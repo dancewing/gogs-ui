@@ -8,6 +8,7 @@ import {
 
 const homeRoute: Route = {
     path: '',
+    pathMatch: 'full',
     redirectTo: 'repos',
     data: {
         pageTitle: 'default.explore'
@@ -15,6 +16,7 @@ const homeRoute: Route = {
 };
 
 const EXPLORE_ROUTES = [
+    homeRoute,
     reposRoute,
     orgsRoute,
     usersRoute

@@ -5,6 +5,7 @@ Bootstrap tweaks
 
 body, h1, h2, h3, h4 {
     font-weight: 300;
+    font-size: 14px;
 }
 
 
@@ -34,8 +35,6 @@ Generic styles
 /* other generic styles */
 
 .jh-card {
-    padding: 1.5%;
-    margin-top: 20px;
     border: none;
 }
 
@@ -201,3 +200,42 @@ ui bootstrap tweaks
 }
 
 /* jhipster-needle-scss-add-main JHipster will add new css style */
+
+.page-with-sidebar > .content-wrapper {
+    min-height: calc(100vh - 50px);
+}
+.content-wrapper:not(.page-with-layout-nav) {
+    margin-top: 50px;
+}
+.content-wrapper {
+    width: 100%;
+    transition: padding 0.15s;
+}
+.content-wrapper {
+    padding-bottom: 100px;
+}
+.breadcrumbs {
+    display: flex;
+    min-height: 61px;
+    color: #2e2e2e;
+    border-bottom: 1px solid #e5e5e5;
+}
+.content-wrapper .container-fluid {
+    background: #fff;
+    padding: 0 16px;
+}
+.container-limited.limit-container-width {
+    max-width: 990px;
+}
+.breadcrumbs-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+.breadcrumbs-links {
+    flex: 1;
+    min-width: 0;
+    align-self: center;
+    color: #d6d6d6;
+}

@@ -1,14 +1,14 @@
 import { Routes } from '@angular/router';
 
 import {
-    RepoRoute,
+    ProjectRoute,
     UserDetailRoute
 } from './';
 import {GogsUserDetectService} from '../shared';
 
 const USER_ROUTES = [
     UserDetailRoute,
-    RepoRoute
+    ProjectRoute
 ];
 export const userState: Routes = [{
     path: ':user',

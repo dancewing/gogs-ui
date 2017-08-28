@@ -9,7 +9,20 @@ Navbar
 
 .jh-navbar {
     background-color: #353d47;
-    padding: .2em 1em;
+    //padding: .2em 1em;
+    padding: 0 16px;
+    z-index: 1000;
+    margin-bottom: 0;
+    min-height: 50px;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #707070;
+    border-radius: 0;
+
     .profile-image {
         margin: -10px 0px;
         height: 40px;
@@ -63,8 +76,8 @@ Logo styles
     &.logo {
         padding: 5px 15px;
         .logo-img {
-            height: 45px;
-            width: 45px;
+            height: 30px;
+            width: 30px;
             display: inline-block;
             vertical-align: middle;
             background: url("../../../content/images/favicon.png") no-repeat center center;

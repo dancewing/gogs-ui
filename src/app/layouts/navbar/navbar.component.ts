@@ -52,6 +52,9 @@ export class NavbarComponent implements OnInit {
       this.languageService.changeLanguage(languageKey);
     }
 
+    // isActive(instruction: any[]): boolean {
+    //     return this.router.isRouteActive(this.router.generate(instruction));
+    // }
     collapseNavbar() {
         this.isNavbarCollapsed = true;
     }

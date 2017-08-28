@@ -37,6 +37,7 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
     entry: {
         polyfills: './src/app/polyfills',
         global: './src/content/scss/global.scss',
+        sidebar: './src/content/scss/sidebar.scss',
         main: './src/app/app.main'
     },
     output: {
@@ -62,10 +63,10 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
         {
             test: /\.scss$/,
             loaders: ['to-string-loader', 'css-loader', 'sass-loader'],
-            exclude: /(vendor\.scss|global\.scss)/
+            exclude: /(vendor\.scss|global\.scss|sidebar\.scss)/
         },
         {
-            test: /(vendor\.scss|global\.scss)/,
+            test: /(vendor\.scss|global\.scss|sidebar\.scss)/,
             loaders: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
         },
         { //this rule will only be used for any vendors
@@ -77,10 +78,10 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
             test: /\.css$/,
             loaders: ['to-string-loader', 'css-loader'],
            // loader: 'style-loader!css-loader',
-            exclude: /(vendor\.css|global\.css|node_modules)/
+            exclude: /(vendor\.css|global\.css|sidebar\.scss|node_modules)/
         },
         {
-            test: /(vendor\.css|global\.css)/,
+            test: /(vendor\.css|global\.css|sidebar\.css)/,
             loaders: ['style-loader', 'css-loader']
         }]
     },

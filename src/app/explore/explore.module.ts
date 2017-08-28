@@ -10,13 +10,14 @@ import {
     UsersComponent,
     OrganizationsComponent
 } from './';
+import { ExploreNavComponent } from './nav/nav.component';
 
 @NgModule({
   imports: [
       JhipsterSharedModule,
       RouterModule.forRoot(exploreState, { useHash: true }),
   ],
-  declarations: [ReposComponent, UsersComponent, OrganizationsComponent],
+  declarations: [ReposComponent, UsersComponent, OrganizationsComponent, ExploreNavComponent],
   providers: [OrganizationsService, ReposService]
 })
 export class ExploreModule { }
