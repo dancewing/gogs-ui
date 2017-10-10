@@ -10,6 +10,7 @@ import {
     OrganizationsComponent
 } from './';
 import { ExploreNavComponent } from './nav/nav.component';
+import {RepositoryResolvePagingParams} from './repos/repos.route';
 
 @NgModule({
   imports: [
@@ -17,6 +18,6 @@ import { ExploreNavComponent } from './nav/nav.component';
       RouterModule.forRoot(exploreState, { useHash: true }),
   ],
   declarations: [ExploreLayoutComponent, ReposComponent, UsersComponent, OrganizationsComponent, ExploreNavComponent],
-  providers: []
+  providers: [RepositoryResolvePagingParams]
 })
 export class ExploreModule { }

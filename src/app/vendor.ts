@@ -3,4 +3,4 @@
 import '../content/scss/vendor.scss';
 // jhipster-needle-add-element-to-vendor - JHipster will add new menu items here
 
-import 'octicons/build/font/octicons.min.css';
+import 'octicons/build/octicons.min.css';

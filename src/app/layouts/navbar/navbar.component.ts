@@ -4,7 +4,7 @@ import { NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { JhiLanguageService } from 'ng-jhipster';
 
 import { ProfileService } from '../profiles/profile.service';
-import { JhiLanguageHelper, Principal, LoginModalService, LoginService } from '../../shared';
+import { JhiLanguageHelper, Principal, LoginModalService, LoginService, OcticonsService } from '../../shared';
 
 import { VERSION, DEBUG_INFO_ENABLED } from '../../app.constants';
 
@@ -23,7 +23,6 @@ export class NavbarComponent implements OnInit {
     swaggerEnabled: boolean;
     modalRef: NgbModalRef;
     version: string;
-
     constructor(
         private loginService: LoginService,
         private languageService: JhiLanguageService,
@@ -31,7 +30,8 @@ export class NavbarComponent implements OnInit {
         private principal: Principal,
         private loginModalService: LoginModalService,
         private profileService: ProfileService,
-        private router: Router
+        private router: Router,
+        private octiconsService: OcticonsService
     ) {
         this.version = VERSION ? 'v' + VERSION : '';
         this.isNavbarCollapsed = true;
@@ -46,6 +46,7 @@ export class NavbarComponent implements OnInit {
             this.inProduction = profileInfo.inProduction;
             this.swaggerEnabled = profileInfo.swaggerEnabled;
         });
+
     }
 
     changeLanguage(languageKey: string) {
@@ -63,10 +64,13 @@ export class NavbarComponent implements OnInit {
         return this.principal.isAuthenticated();
     }
 
+    octicons(): OcticonsService {
+        return this.octiconsService;
+    }
+
     login() {
         this.modalRef = this.loginModalService.open();
     }
-
     logout() {
         this.collapseNavbar();
         this.loginService.logout();

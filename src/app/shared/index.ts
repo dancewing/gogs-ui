@@ -24,6 +24,7 @@ export * from './model/request-util';
 export * from './model/base-entity';
 export * from './repo/repository.model';
 export * from './repo/repository.service';
+export * from './octicons/octicons.service';
 export * from './shared-libs.module';
 export * from './shared-common.module';
 export * from './shared.module';

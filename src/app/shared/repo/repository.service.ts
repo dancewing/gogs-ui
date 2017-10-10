@@ -9,7 +9,7 @@ import { createRequestOption } from '../model/request-util';
 @Injectable()
 export class RepositoryService {
 
-    private resourceUrl = 'api/v2/users';
+    private resourceUrl = 'api/v2/repos';
 
     constructor(private http: Http) { }
 
@@ -29,7 +29,7 @@ export class RepositoryService {
 
     query(req?: any): Observable<ResponseWrapper> {
         const options = createRequestOption(req);
-        return this.http.get(this.resourceUrl, options)
+        return this.http.get(this.resourceUrl + '/search', options)
             .map((res: Response) => this.convertResponse(res));
     }
 
