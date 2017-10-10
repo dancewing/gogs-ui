@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
-import { OrganizationsService } from './organizations.service';
-import { ReposService } from './repos.service';
 import { JhipsterSharedModule } from '../shared';
 import { RouterModule } from '@angular/router';
 
 import {
     exploreState,
+    ExploreLayoutComponent,
     ReposComponent,
     UsersComponent,
     OrganizationsComponent
@@ -17,7 +16,7 @@ import { ExploreNavComponent } from './nav/nav.component';
       JhipsterSharedModule,
       RouterModule.forRoot(exploreState, { useHash: true }),
   ],
-  declarations: [ReposComponent, UsersComponent, OrganizationsComponent, ExploreNavComponent],
-  providers: [OrganizationsService, ReposService]
+  declarations: [ExploreLayoutComponent, ReposComponent, UsersComponent, OrganizationsComponent, ExploreNavComponent],
+  providers: []
 })
 export class ExploreModule { }

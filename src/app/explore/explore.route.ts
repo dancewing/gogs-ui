@@ -5,6 +5,7 @@ import {
     orgsRoute,
     usersRoute
 } from './';
+import {ExploreLayoutComponent} from './explore-layout.component';
 
 const homeRoute: Route = {
     path: '',
@@ -26,6 +27,7 @@ export const exploreState: Routes = [{
     path: 'explore',
     data: {},
     canActivate: [],
+    component: ExploreLayoutComponent,
     children: EXPLORE_ROUTES
 }
 ];

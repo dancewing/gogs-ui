@@ -6,5 +6,5 @@ export * from './users/users.route';
 
 export * from './organizations/organizations.component';
 export * from './organizations/organizations.route';
-
+export * from './explore-layout.component';
 export * from './explore.route';

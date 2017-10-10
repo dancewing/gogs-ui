@@ -1,17 +1,30 @@
-<ul class="nav nav-pills flex-column">
-    <li class="nav-item">
-        <a class="nav-link" routerLink="/explore/repos" routerLinkActive="active" >
-            <span jhiTranslate="explore.repos">User management</span>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" routerLink="/explore/users" routerLinkActive="active" >
-            <span jhiTranslate="explore.users">Users</span>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" routerLink="/explore/organizations" routerLinkActive="active" >
-            <span jhiTranslate="explore.organizations">Users</span>
-        </a>
-    </li>
-</ul>
+<div class="nav-sidebar-inner-scroll">
+    <div class="context-header">
+        <span jhiTranslate="default.explore" class="title">Explore</span>
+    </div>
+    <ul class="sidebar-top-level-items">
+        <li routerLinkActive="active">
+            <a title="Repository" class="shortcuts-tree" routerLink="/explore/repos">
+                <div class="nav-icon-container">
+                    <span class="octicon octicon-repo"></span>
+                </div>
+                <span class="nav-item-name" jhiTranslate="explore.repos">Repository</span>
+            </a>
+        </li>
+        <li routerLinkActive="active">
+            <a title="Issues" class="shortcuts-issues" routerLink="/explore/users">
+                <div class="nav-icon-container">
+                    <span class="octicon octicon-person"></span>
+                </div>
+                <span class="nav-item-name" jhiTranslate="explore.users">Issues</span>
+            </a>
+        </li>
+        <li routerLinkActive="active">
+            <a title="Merge Requests" class="shortcuts-merge_requests" routerLink="/explore/organizations">
+            <div class="nav-icon-container">
+                <span class="octicon octicon-organization"></span>
+            </div>
+            <span class="nav-item-name" jhiTranslate="explore.organizations">Merge Requests</span>
+        </a></li>
+    </ul>
+</div>
